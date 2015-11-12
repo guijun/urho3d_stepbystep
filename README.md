@@ -17,6 +17,13 @@ Licensed under the MIT license, see [License.txt](https://github.com/urho3d/Urho
 -   需要[Using Urho3D as external library](http://urho3d.github.io/documentation/1.5/_using_library.html)的工作模式的人
 
 ##使用方法:
+-   Windows/Macosx: 
+- 		安装CMake
+- 		修改PATH,确保控制台可以运行CMake
+- 	Windows:
+- 		安装VS2013
+- 	Macosx:
+- 		安装XCode
 -   假如你的工作目录如下:
 -     ~/sdk
 -     ~/myworks
@@ -25,13 +32,34 @@ Licensed under the MIT license, see [License.txt](https://github.com/urho3d/Urho
 -       设定环境变量URHO3D_HOME=${HOME}/sdk/Urho3D-1.5
 -   2.在~/myworks下建立MyProject
 -       cd MyProject
--       ./0_CreateEmptyProject.sh
--   3.打开build_macosx下的工程
-
+-       Macosx: 
+- 			./0_CreateEmptyProject.sh
+- 		Windows:
+- 			0_CreateEmptyProject.bat
+-   3.前往~/sdk/Urho3D-1.5
+- 		Windows:
+- 			运行build_vs2013/_genproject.bat
+- 			打开Urho3D.proj
+- 			编译ALL_BUILD
+- 		Macosx:
+- 			运行build_macosx/_genproject.sh
+- 			打开Urho3D.xcodeproj
+- 			编译ALL_BUILD
+-   4.前往 ~/myworks/MyProject
+- 		Windows:
+- 			运行build_vs2013/_genproject.bat
+- 			打开Urho3D.proj
+- 			编译ALL_BUILD
+- 		Macosx:
+- 			运行build_macosx/_genproject.sh
+- 			打开Urho3D.xcodeproj
+- 			编译ALL_BUILD
 ##TODO(待办):
--   编写 0_CreateEmptyProject.bat (windows平台)
--   编写 Templates/build_vs2013/_genproject.bat
-
+- 
 ##变更日志:
+-   增加Windows版本
+-   引擎版本对应1.5(1.4版本源代码不兼容)
+-   BUG修正
 -   轻微调整官方的Sample.* 改名为GameApp.cpp/h
 -   轻微调整官方的Helloworld,改名为MyGame.cpp/h
+- 
