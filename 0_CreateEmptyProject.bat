@@ -13,7 +13,7 @@ copy %URHO3D_HOME%\License.txt .
 
 xcopy /Y /E Templates\* .
 
-xcopy /Y /E Templates/build_* %URHO3D_HOME%\
+xcopy /Y /E Templates\build_* %URHO3D_HOME%\
 
 
 
