@@ -25,18 +25,18 @@ Licensed under the MIT license, see [License.txt](https://github.com/urho3d/Urho
 - 	Macosx:
 - 		安装XCode
 -   假如你的工作目录如下:
--     ~/sdk
+-     ~/Urho3D-1.5
 -     ~/myworks
 -   1.下载官方发布的SDK （以1.5为例)
--       解压到~/sdk 则 SDK 位于 ~/sdk/Urho3D-1.5
--       设定环境变量URHO3D_HOME=${HOME}/sdk/Urho3D-1.5
+-       解压到~/Urho3D-1.5 则 SDK 位于 ~/Urho3D-1.5
+-       设定环境变量URHO3D_HOME=${HOME}/Urho3D-1.5
 -   2.在~/myworks下建立MyProject
 -       cd MyProject
 -       Macosx: 
 - 			./0_CreateEmptyProject.sh
 - 		Windows:
 - 			0_CreateEmptyProject.bat
--   3.前往~/sdk/Urho3D-1.5
+-   3.前往~/Urho3D-1.5
 - 		Windows:
 - 			运行build_vs2013/_genproject.bat
 - 			打开Urho3D.proj
@@ -62,4 +62,3 @@ Licensed under the MIT license, see [License.txt](https://github.com/urho3d/Urho
 -   BUG修正
 -   轻微调整官方的Sample.* 改名为GameApp.cpp/h
 -   轻微调整官方的Helloworld,改名为MyGame.cpp/h
-- 
