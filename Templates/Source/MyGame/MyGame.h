@@ -31,7 +31,7 @@ using namespace Urho3D;
 ///     - Subscribing to and handling of update events
 class MyGame : public GameApp
 {
-    OBJECT(MyGame);
+    URHO3D_OBJECT(MyGame,GameApp);
     typedef GameApp super;
 public:
     /// Construct.

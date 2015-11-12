@@ -51,7 +51,7 @@ const float TOUCH_SENSITIVITY = 2.0f;
 class GameApp : public Application
 {
     // Enable type information.
-    OBJECT(GameApp);
+    URHO3D_OBJECT(GameApp,Application);
     typedef Application super;
 public:
     /// Construct.

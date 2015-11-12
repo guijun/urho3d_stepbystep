@@ -34,7 +34,7 @@
 #include "MyGame.h"
 using namespace Urho3D;
 // Expands to this example's entry-point
-DEFINE_APPLICATION_MAIN(MyGame)
+URHO3D_DEFINE_APPLICATION_MAIN(MyGame)
 
 MyGame::MyGame(Context* context) :
     super(context)
@@ -80,7 +80,7 @@ void MyGame::CreateText()
 void MyGame::SubscribeToEvents()
 {
     // Subscribe HandleUpdate() function for processing update events
-    SubscribeToEvent(E_UPDATE, HANDLER(MyGame, HandleUpdate));
+    SubscribeToEvent(E_UPDATE, URHO3D_HANDLER(MyGame, HandleUpdate));
 }
 
 void MyGame::HandleUpdate(StringHash eventType, VariantMap& eventData)

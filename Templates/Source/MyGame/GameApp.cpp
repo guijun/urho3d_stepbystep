@@ -74,7 +74,7 @@ void GameApp::Start()
         InitTouchInput();
     else if (GetSubsystem<Input>()->GetNumJoysticks() == 0)
         // On desktop platform, do not detect touch when we already got a joystick
-        SubscribeToEvent(E_TOUCHBEGIN, HANDLER(GameApp, HandleTouchBegin));
+        SubscribeToEvent(E_TOUCHBEGIN, URHO3D_HANDLER(GameApp, HandleTouchBegin));
 
     // Create logo
     CreateLogo();
@@ -86,9 +86,9 @@ void GameApp::Start()
     CreateConsoleAndDebugHud();
 
     // Subscribe key down event
-    SubscribeToEvent(E_KEYDOWN, HANDLER(GameApp, HandleKeyDown));
+    SubscribeToEvent(E_KEYDOWN, URHO3D_HANDLER(GameApp, HandleKeyDown));
     // Subscribe scene update event
-    SubscribeToEvent(E_SCENEUPDATE, HANDLER(GameApp, HandleSceneUpdate));
+    SubscribeToEvent(E_SCENEUPDATE, URHO3D_HANDLER(GameApp, HandleSceneUpdate));
 }
 
 void GameApp::Stop()

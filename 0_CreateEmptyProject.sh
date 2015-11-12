@@ -15,5 +15,7 @@ cp $URHO3D_HOME/License.txt ./
 
 cp -rf Templates/* ./
 
+chmod 755 *.sh
 
 
+cp -rf Templates/build_* $URHO3D_HOME
